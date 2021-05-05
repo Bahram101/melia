@@ -23,8 +23,8 @@ if(isset($_POST['callme'])){
         $mail->Password   = '';		
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-        $mail->setFrom('bahram101@mail.ru', $name);
-        $mail->addAddress('bahram101@mail.ru');
+        $mail->setFrom('', $name);
+        $mail->addAddress('');
         $mail->isHTML(true);		
         $mail->Subject = 'Звоните мне';
         $mail->CharSet = 'UTF-8';
@@ -47,12 +47,12 @@ if(isset($_POST['callme'])){
         $mail->isSMTP();
         $mail->Host       = 'smtp.mail.ru';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'bahram101@mail.ru';
+        $mail->Username   = '';
         $mail->Password   = '';
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-        $mail->setFrom('bahram101@mail.ru', $name);
-        $mail->addAddress('bahram101@mail.ru');
+        $mail->setFrom('', $name);
+        $mail->addAddress('');
         $mail->addReplyTo($email, $name);
         $mail->isHTML(true);
         $mail->Subject = 'Сообщение';
