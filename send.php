@@ -19,8 +19,8 @@ if(isset($_POST['callme'])){
         $mail->isSMTP();
         $mail->Host       = 'smtp.mail.ru';		
         $mail->SMTPAuth   = true;        
-        $mail->Username   = 'bahram101@mail.ru';
-        $mail->Password   = 'gnusmasgnus';		
+        $mail->Username   = '';
+        $mail->Password   = '';		
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
         $mail->setFrom('bahram101@mail.ru', $name);
